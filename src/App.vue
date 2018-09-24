@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// var localumd = require('./umd')
+/* eslint-disable */
+import localumd from './umd.js'
+import moduleumd from '../node_modules/umd.copy.js'
+console.log('localumd', localumd);  // undefined
+console.log('moduleumd', moduleumd); // some string
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+  name: 'app'
 }
 </script>
 
